@@ -2,6 +2,8 @@
     --fondo :#fff;
     --size:40px;
 }
+
+
 body{
     padding: 0%;
     margin: 0%;
@@ -79,4 +81,19 @@ background: #E2DCCC;
 
 .back:hover{
     transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 860px) {
+    :root{
+        --fondo :#fff;
+        --size:55px!important;
+    }
+    .back{
+        font-size: 30px;
+    }
+    body{
+        height: 70vh!important;
+    }
+    
 }

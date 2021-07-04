@@ -1,8 +1,13 @@
 .card{
     transition: all ease .2s;
+    overflow: hidden;
 }
 
-.card:hover{
-    transform: scale(1.05);
+.card>a>img:hover{
+    transform: scale(1.15);
 }
 
+img{
+    transition: all ease.3s;
+    width: 100%;
+}
