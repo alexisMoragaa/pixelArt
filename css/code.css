@@ -1,0 +1,27 @@
+.code-side{
+    margin-left:25px;
+    
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.size-1{
+    max-width: 35%;;
+}
+.code{
+    background: #3c3c3c;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    
+}
+
+
+
+@media screen and (max-width: 760px){
+    .code-side{
+        margin-left: 0;
+    }
+    .size-1{
+        max-width: 100%;
+    }
+    
+}

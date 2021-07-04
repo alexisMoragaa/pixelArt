@@ -8,14 +8,15 @@ body{
     padding: 0%;
     margin: 0%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-#contenedor{
-    background: var(--fondo)
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
 }
+
 
 .block{
     height: var(--size);
@@ -76,7 +77,7 @@ background: #E2DCCC;
     border:1px solid gray;
     border-radius: 5px;
     text-decoration: none;
-    transition: all ease .3s;
+    transition: all ease .2s;
 }
 
 .back:hover{
@@ -84,16 +85,45 @@ background: #E2DCCC;
 }
 
 
-@media screen and (max-width: 860px) {
+.contenedor-2{
+    display: flex;
+    justify-content: space-around;
+}
+.size-2{
+    width: 40%;
+}
+.text-side{
+    width: 45%;
+}
+
+
+
+@media screen and (max-width: 760px) {
     :root{
-        --fondo :#fff;
-        --size:55px!important;
+        --size:20px!important;
     }
-    .back{
-        font-size: 30px;
-    }
+    
     body{
-        height: 70vh!important;
+        width: 100%!important;
+        padding: 10px;
+    }
+    .contenedor{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    
+
+    .contenedor-2{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
+    .size-2{
+        width: 100%;
+    }
+    .text-side{
+        width: 100%;
     }
     
 }
