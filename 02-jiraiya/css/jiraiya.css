@@ -5,6 +5,7 @@
     --r:#C62C23;
     --s:#FBD1A9;
     --y:#FFDE29;
+    --size:20;
 }
 body{
     margin: 0;
@@ -16,10 +17,20 @@ body{
     padding: 50px;
     
 }
+
+@media screen and (max-width: 760px) {
+    .contenedor{
+        padding:25px!important;
+    }
+    :root{
+        --size:10;
+    }
+}
+
 #jiraiya{
     width: 1px;
     height: 1px;
-    transform: scale(20);
+    transform: scale(var(--size));
 
     box-shadow: 
         11px 0 var(--b), 12px 0 var(--b), 19px 0 var(--b), 20px 0 var(--b),
@@ -193,10 +204,5 @@ body{
 
         10px 40px var(--b), 11px 40px var(--b), 12px 40px var(--b),13px 40px var(--b),14px 40px var(--b), 
         18px 40px var(--b), 19px 40px var(--b), 20px 40px var(--b), 21px 40px var(--b), 22px 40px var(--b)
-
-
-
-
-
 
 }
