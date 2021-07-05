@@ -11,3 +11,6 @@ img{
     transition: all ease.3s;
     width: 100%;
 }
+.card{
+    justify-content: center;
+}
