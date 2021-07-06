@@ -1,0 +1,12 @@
+:root{
+    --size:20;
+}
+body{
+    padding:100px;
+}
+#heart{
+    width: 1px;
+    height: 1px;
+    transform: scale(var(--size));
+  transition: all ease .5s;
+}
