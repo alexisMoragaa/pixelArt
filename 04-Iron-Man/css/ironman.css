@@ -1,19 +1,45 @@
 :root{
     --size:20;
+    --size2:20.5;
 }
 body{
-    padding:100px;
+    padding:50px;
+}
+#fire{
+   width: 1px;
+   height: 1px;
+   transform: scale(var(--size));
+    animation-name: fire; 
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 #ironman{
     width: 1px;
     height: 1px;
     transform: scale(var(--size));
-    transition: all ease .5s;
+    animation-name: fly;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fly{
+  0%{transform: scale(var(--size)) translateY(0em) translateX(0em)}
+  50%{transform: scale(var(--size2)) translateY(.3em) translateX(0em)}
+  100%{transform: scale(var(--size)) translateY(0em) translateX(0em)}
+  
+}
+
+@keyframes fire{
+  0%{transform: scale(var(--size)) translateY(0em) translateX(0em); opacity:.2}
+  50%{transform: scale(var(--size2)) translateY(.3em) translateX(0em); }
+  65%{opacity:1}
+  100%{transform: scale(var(--size)) translateY(0em) translateX(0em); opacity:0}
 }
 
 @media screen and (max-width:760px){
     :root{
         --size:10;
+        --size2:10.5;
     }
     body{
         padding:40px;
