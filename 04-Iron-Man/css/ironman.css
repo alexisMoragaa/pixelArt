@@ -1,0 +1,21 @@
+:root{
+    --size:20;
+}
+body{
+    padding:100px;
+}
+#ironman{
+    width: 1px;
+    height: 1px;
+    transform: scale(var(--size));
+    transition: all ease .5s;
+}
+
+@media screen and (max-width:760px){
+    :root{
+        --size:10;
+    }
+    body{
+        padding:40px;
+    }
+}
