@@ -14,3 +14,9 @@ img{
 .card{
     justify-content: center;
 }
+
+@media screen and (max-width:760px) {
+    body{
+        padding:10px;
+    }
+}
